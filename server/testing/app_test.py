@@ -20,6 +20,7 @@ class TestApp:
             })
             response_json = response.get_json()
 
+
             assert(response.content_type == 'application/json')
             assert(response.status_code == 200)
             assert(response_json['id'] == user.id)
